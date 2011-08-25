@@ -5,11 +5,10 @@ require "imagine/version"
 Gem::Specification.new do |s|
   s.name        = "imagine"
   s.version     = Imagine::VERSION
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
+  s.authors     = ["Josh Adams"]
+  s.email       = ["josh@isotope11.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{imagine is a mountable rails engine for dropping a photo gallery into your application.}
 
   s.rubyforge_project = "imagine"
 
@@ -21,4 +20,5 @@ Gem::Specification.new do |s|
   # specify any dependencies here; for example:
   # s.add_development_dependency "rspec"
   # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "rake", "~> 0.9.2"
 end
