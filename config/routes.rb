@@ -1,2 +1,3 @@
-Imagine2::Engine.routes.draw do
+Imagine::Engine.routes.draw do
+  resources :albums
 end
