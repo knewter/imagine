@@ -52,7 +52,9 @@ PATH
   remote: .
   specs:
     imagine (0.0.1)
+      dragonfly (~> 0.9.0)
       haml-rails
+      rack-cache (>= 0.5.3)
 
 GEM
   remote: http://rubygems.org/
@@ -72,7 +74,10 @@ GEM
       ffi (~> 1.0.6)
     columnize (0.3.4)
     diff-lcs (1.1.2)
+    dragonfly (0.9.5)
+      rack
     erubis (2.7.0)
+    factory_girl (2.0.5)
     ffi (1.0.9)
     haml (3.1.2)
     haml-rails (0.3.4)
@@ -136,6 +141,7 @@ GEM
       ffi (>= 1.0.7)
       json_pure
       rubyzip
+    spork (0.8.5)
     sprockets (2.0.0.beta.15)
       hike (~> 1.2)
       rack (~> 1.0)
@@ -155,9 +161,11 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  factory_girl
   imagine!
   jquery-rails
   rails!
   rspec-rails (~> 2.5)
   ruby-debug19
+  spork
   sqlite3

@@ -3,6 +3,7 @@ module Imagine
     class Album
       def self.find(id)
         # returns an album
+        ::Imagine::Album.find(id)
       end
 
       def self.new(params)
