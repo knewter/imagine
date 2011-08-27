@@ -13,4 +13,13 @@ describe 'images' do
       page.should have_content("Image has been attached!")
     end
   end
+
+  it 'creating a new one unsuccessfully' do
+    visit album_path(@album)
+    click_link "New Image"
+    click_button "Attach Image"
+    within ".flash.error" do
+      page.should have_content("There was a problem creating the image")
+    end
+  end
 end

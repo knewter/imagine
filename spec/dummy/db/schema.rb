@@ -13,10 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20110826222354) do
 
-  create_table "albums", :force => true do |t|
-    t.string "name"
-  end
-
   create_table "imagine_albums", :force => true do |t|
     t.string "name"
   end
