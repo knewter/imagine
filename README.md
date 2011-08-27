@@ -1,4 +1,6 @@
 # Imagine
+[![Travis CI Build Status](http://travis-ci.org/knewter/imagine.png)](http://travis-ci.org/knewter/imagine)
+
 A rails image gallery, that's mountable.  Works on rails 3.1 at least :)
 It's still in active development.
 
