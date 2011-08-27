@@ -16,7 +16,7 @@ Spork.prefork do
   require File.expand_path("../dummy/config/environment.rb", __FILE__)
   require 'rspec/rails'
   begin
-    require 'ruby-debug'
+    #require 'ruby-debug'
   rescue
   end
 

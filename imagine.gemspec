@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rspec-rails", "~> 2.5"
   s.add_development_dependency "capybara"
-  s.add_development_dependency "ruby-debug19"
   s.add_development_dependency "factory_girl"
   s.add_development_dependency "spork"
 end
