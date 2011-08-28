@@ -1,5 +1,5 @@
 module Imagine
-  class Engine < Rails::Engine
+  class Engine < ::Rails::Engine
     isolate_namespace Imagine
   end
 end

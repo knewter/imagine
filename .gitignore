@@ -7,3 +7,5 @@ spec/dummy/tmp/
 *.sw*
 spec/dummy/public/system/dragonfly/
 coverage
+spec/spec_failing_examples.txt
+spec/spec_report.html
