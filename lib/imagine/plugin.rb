@@ -3,7 +3,7 @@ module Imagine
 
   class Plugin
 
-    attr_accessor :name, :version, :pathname
+    attr_accessor :name, :version, :pathname, :directory
     attr_reader   :description
 
     def self.register(&block)
@@ -12,7 +12,7 @@ module Imagine
       raise "A plugin MUST have a name!: #{plugin.inspect}" if plugin.name.blank?
 
       # add the new plugin to the collection of registered plugins
-      ::Refinery::Plugins.registered << plugin
+      ::Imagine::Plugins.registered << plugin
     end
 
     def pathname=(value)

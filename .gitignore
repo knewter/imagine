@@ -9,3 +9,7 @@ spec/dummy/public/system/dragonfly/
 coverage
 spec/spec_failing_examples.txt
 spec/spec_report.html
+spec/dummy/tmp/*
+
+# Imagine specific
+imagine-*.gem
