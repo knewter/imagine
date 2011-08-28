@@ -1,13 +1,5 @@
 module Imagine
   module BasicListView
-
-    class << self
-      attr_accessor :root
-      def root
-        @root ||= Pathname.new(File.expand_path('../../', __FILE__))
-      end
-    end
-
     class Engine < ::Rails::Engine
       isolate_namespace ::Imagine
 
@@ -16,7 +8,7 @@ module Imagine
           plugin.pathname = root
           plugin.name = 'imagine_basic_list_view'
           plugin.directory = 'basic_list_view'
-          plugin.version = %q{0.0.1}
+          plugin.version = %q{0.1.2}
         end
       end
 
