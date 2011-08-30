@@ -1,4 +1,8 @@
 %h2= @album.name
 %h3 Basic List View
 
+.images
+  - @album.images.each do |image|
+    = render :partial => 'imagine/images/basic_list_view/image', :object => image
+
 = link_to "New Image", new_album_image_path(@album)

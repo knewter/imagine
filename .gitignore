@@ -13,3 +13,6 @@ spec/dummy/tmp/*
 
 # Imagine specific
 imagine-*.gem
+
+# vim-ruby-debugger
+posix

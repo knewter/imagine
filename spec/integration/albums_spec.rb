@@ -23,6 +23,7 @@ describe 'albums' do
   describe 'viewing an existing album' do
     before do
       @album = Factory(:album, :name => "Boogie")
+      @image = Factory(:image, :album => @album, :file_url => 'http://www.google.com/images/logo_sm.gif')
     end
     context 'with no plugin view defined in the params' do
       it 'should render the default view' do
@@ -41,6 +42,7 @@ describe 'albums' do
         within 'h3' do
           page.should have_content("Basic List View")
         end
+        page.should have_selector('.images img')
       end
     end
   end
