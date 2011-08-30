@@ -34,4 +34,9 @@ In another terminal, once that's done, you can:
     bundle exec rspec spec
 
 ## License
-This project rocks and uses MIT-LICENSE.
+This project uses MIT-LICENSE.
+
+## Contributors
+Josh Adams (josh@isotope11.com)
+
+Some code (plugin system, .travis.yml) lifted ungraciously from http://github.com/resolve/refinerycms.  Those guys are awesome.
