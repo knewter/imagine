@@ -19,4 +19,29 @@ describe 'albums' do
       page.should have_content("There was a problem creating the album.")
     end
   end
+
+  describe 'viewing an existing album' do
+    before do
+      @album = Factory(:album, :name => "Boogie")
+    end
+    context 'with no plugin view defined in the params' do
+      it 'should render the default view' do
+        visit album_path(@album)
+        within 'h2' do
+          page.should have_content("Boogie")
+        end
+      end
+    end
+    context 'with basic_list_view plugin view defined in the params' do
+      it 'should render the basic_list_view album show view' do
+        visit album_path(@album, :plugin => 'basic_list_view')
+        within 'h2' do
+          page.should have_content("Boogie")
+        end
+        within 'h3' do
+          page.should have_content("Basic List View")
+        end
+      end
+    end
+  end
 end

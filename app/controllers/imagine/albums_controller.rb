@@ -5,6 +5,7 @@ module Imagine
 
     def show
       load_album
+      return render_show_view
     end
 
     def new
@@ -28,6 +29,14 @@ module Imagine
 
     def load_album
       @album = ::Imagine::Warehouses::Album.find(params[:id])
+    end
+
+    def render_show_view
+      if params[:plugin]
+        render :action => "/#{params[:plugin]}/show"
+      else
+        render :action => 'show'
+      end
     end
   end
 end
