@@ -14,8 +14,7 @@ module Imagine
     def create
       load_new_album
       if ::Imagine::Warehouses::Album.save(@album)
-        flash[:notice] = "Album has been created!"
-        redirect_to @album
+        redirect_to @album, :notice => "Album has been created!"
       else
         flash.now[:error] = "There was a problem creating the album."
         render :action => 'new'
