@@ -6,8 +6,8 @@ gem 'sqlite3'
 
 gem 'jquery-rails'
 # To use debugger
-gem 'ruby-debug19', :require => 'ruby-debug'
-gem 'ruby-debug-ide19'
+#gem 'ruby-debug19', :require => 'ruby-debug'
+#gem 'ruby-debug-ide19'
 
 gem 'simplecov', '>= 0.4.0', :require => false, :group => :test
 

@@ -8,7 +8,7 @@ module Imagine
           plugin.pathname = root
           plugin.name = 'imagine_basic_list_view'
           plugin.directory = 'basic_list_view'
-          plugin.version = %q{0.1.2}
+          plugin.version = %q{0.1.3}
         end
       end
 
