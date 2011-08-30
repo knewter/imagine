@@ -1,3 +1,4 @@
+script: "bundle exec rake db:create db:migrate spec"
 notifications:
   email:
     - josh@isotope11.com
