@@ -25,6 +25,8 @@ load 'rails/tasks/engine.rake'
 
 require 'rake/testtask'
 
+require 'rspec/core/rake_task'
+
 Rake::TestTask.new(:test) do |t|
   t.libs << 'lib'
   t.libs << 'test'
@@ -32,5 +34,9 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
+desc 'run specs'
+RSpec::Core::RakeTask.new do |t|
+  t.pattern = "./spec/**/*_spec.rb"
+end
 
-task :default => :test
+task :default => :spec
