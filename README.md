@@ -40,3 +40,4 @@ This project uses MIT-LICENSE.
 Josh Adams (josh@isotope11.com)
 
 Some code (plugin system, .travis.yml) lifted ungraciously from http://github.com/resolve/refinerycms.  Those guys are awesome.
+
