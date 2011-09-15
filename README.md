@@ -6,6 +6,21 @@ It's still in active development.
 
 * [Github project](http://www.github.com/knewter/imagine)
 
+## USAGE
+To use Imagine in your app, simply add it to your Gemfile.  Then, mount it by:
+
+    mount Imagine::Engine, :at => "/imagine"
+
+Install the migrations with:
+
+    bundle exec rake imagine:install:migrations
+
+And run the migrations with:
+
+    bundle exec rake db:migrate
+
+Finally, visit /imagine/albums in your browser to get started.
+
 ## TODO
 * Build the plugin system
 * Build a plugin that ships with core that handles a basic display style

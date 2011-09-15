@@ -2,6 +2,7 @@ module Imagine
   module BasicListView
     class Engine < ::Rails::Engine
       isolate_namespace ::Imagine
+      engine_name 'imagine_basic_list_view'
 
       config.after_initialize do |app|
         ::Imagine::Plugin.register do |plugin|
