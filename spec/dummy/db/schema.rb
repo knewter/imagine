@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(:version => 20110826222354) do
   create_table "imagine_images", :force => true do |t|
     t.string  "file_name"
     t.string  "file_uid"
-    t.string  "url"
     t.integer "album_id"
   end
 
