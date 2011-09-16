@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name              = %q{imagine-basic_list_view}
-  s.version           = %q{0.1.3}
+  s.version           = %q{0.1.4}
   s.summary           = %q{Basic list view for Imagine}
   s.description       = %q{The default album view for Imagine.  Just lists images one after another}
   s.date              = %q{2011-08-28}
@@ -14,8 +14,8 @@ Gem::Specification.new do |s|
   s.require_paths     = %w(lib)
   s.executables       = %w()
 
-  s.files             = [
+  s.files             = Dir["app/**/*"] + [
     'imagine-basic_list_view.gemspec',
     'lib/imagine-basic_list_view.rb'
-  ]
+  ] 
 end
