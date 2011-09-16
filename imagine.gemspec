@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.license       = %q{MIT}
   s.require_paths = %w(lib)
 
-  s.files = Dir["lib/**/*"] + Dir["app/**/*"] + Dir["basic_list_view/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["lib/**/*"] + Dir["app/**/*"] + Dir["db/migrate/*"] + Dir["basic_list_view/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   # Imagine
   s.add_dependency 'imagine-basic_list_view', '~> 0.1.0'

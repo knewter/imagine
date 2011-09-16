@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'rails',     :git => 'git://github.com/rails/rails.git', :branch => 'v3.1.0.rc6'
+gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
