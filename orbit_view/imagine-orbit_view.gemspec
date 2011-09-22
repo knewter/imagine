@@ -1,11 +1,11 @@
 # Encoding: UTF-8
 
 Gem::Specification.new do |s|
-  s.name              = %q{imagine-basic_list_view}
+  s.name              = %q{imagine-orbit_view}
   s.version           = %q{0.1.4}
-  s.summary           = %q{Basic list view for Imagine}
-  s.description       = %q{The default album view for Imagine.  Just lists images one after another}
-  s.date              = %q{2011-08-28}
+  s.summary           = %q{Orbit slider view for Imagine}
+  s.description       = %q{A jquery slider album view for Imagine.  Uses orbit.}
+  s.date              = %q{2011-09-19}
   s.email             = %q{josh@isotope11.com}
   s.homepage          = %q{http://github.com/knewter/imagine}
   s.rubyforge_project = %q{imagine}
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.executables       = %w()
 
   s.files             = Dir["app/**/*"] + [
-    'imagine-basic_list_view.gemspec',
-    'lib/imagine-basic_list_view.rb'
+    'imagine-orbit_view.gemspec',
+    'lib/imagine-orbit_view.rb'
   ] 
 end
