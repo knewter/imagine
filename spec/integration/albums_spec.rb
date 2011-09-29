@@ -45,5 +45,17 @@ describe 'albums' do
         page.should have_selector('.images img')
       end
     end
+    context 'with orbit_view plugin view defined in the params' do
+      it 'should render the orbit_view album show view' do
+        visit album_path(@album, :plugin => 'orbit_view')
+        within 'h2' do
+          page.should have_content("Boogie")
+        end
+        within 'h3' do
+          page.should have_content("Orbit View")
+        end
+        page.should have_selector('.images img')
+      end
+    end
   end
 end

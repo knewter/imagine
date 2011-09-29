@@ -22,16 +22,19 @@ And run the migrations with:
 Finally, visit /imagine/albums in your browser to get started.
 
 ## TODO
-* Build the plugin system
-* Build a plugin that ships with core that handles a basic display style
 * Allow a user to choose the default display style at album level
-* Allow a visitor to look at any album with any display style via a param
+* API to define a default view for albums, images (so define a default plugin)
+* Provide a standard means of wrapping with authentication
+* Provide a happy-path for attaching albums polymorphically to other objects
+* Make it look a little prettier.  Provide a stylesheet that you can include if you so desire.
 
 ## Plugins
 New album display types are specified in plugins.
 
 Plugins are just gems.  There is a plugin shipped with the core project called
 `imagine_basic_list`.  It should serve as a good template for building your own.
+There is another plugin called `orbit_view` that displays the album using jquery
+orbit.
 
 They're just rails engines, that have a bit of configuration logic to let
 Imagine know that they should be incuded in the template style lists.
