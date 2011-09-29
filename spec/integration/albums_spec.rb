@@ -33,6 +33,22 @@ describe 'albums' do
         end
       end
     end
+    context 'with no plugin view defined in the params but the default_plugin set to basic_list_view' do
+      it 'should render the basic_list_view view' do
+        visit album_path(@album)
+        within 'h3' do
+          page.should have_content("Basic List View")
+        end
+      end
+    end
+    context 'with orbit_view defined in the params but the default_plugin set to basic_list_view' do
+      it 'should render the orbit_view view' do
+        visit album_path(@album, :plugin => 'orbit_view')
+        within 'h3' do
+          page.should have_content("Orbit View")
+        end
+      end
+    end
     context 'with basic_list_view plugin view defined in the params' do
       it 'should render the basic_list_view album show view' do
         visit album_path(@album, :plugin => 'basic_list_view')
