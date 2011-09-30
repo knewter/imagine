@@ -1,7 +1,7 @@
 module Imagine
   class << self
     def version
-      %q{0.2.0}
+      %q{0.2.1}
     end
   end
 end
