@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name              = %q{imagine-orbit_view}
-  s.version           = %q{0.1.8}
+  s.version           = %q{0.1.9}
   s.summary           = %q{Orbit slider view for Imagine}
   s.description       = %q{A jquery slider album view for Imagine.  Uses orbit.}
   s.date              = %q{2011-09-29}

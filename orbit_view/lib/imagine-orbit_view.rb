@@ -9,7 +9,7 @@ module Imagine
           plugin.pathname = root
           plugin.name = 'imagine_orbit_view'
           plugin.directory = 'orbit_view'
-          plugin.version = %q{0.1.8}
+          plugin.version = %q{0.1.9}
         end
       end
 

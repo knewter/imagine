@@ -13,7 +13,7 @@ module Imagine
     def create
       load_new_image
       if ::Imagine::Warehouses::Image.save(@image)
-        redirect_to [@album, @image], :notice => "Image has been attached!"
+        redirect_to @album, :notice => "Image has been attached!"
       else
         flash.now[:error] = "There was a problem creating the image."
         render :action => 'new'
