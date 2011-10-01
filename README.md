@@ -21,6 +21,9 @@ And run the migrations with:
 
 Finally, visit /imagine/albums in your browser to get started.
 
+## EXTERNAL DEPENDENCIES
+Imagine uses Dragonfly, which assumes you have ImageMagick installed on your server.
+
 ## TODO
 * Allow a user to choose the default display style at album level
 * API to define a default view for albums, images (so define a default plugin)
