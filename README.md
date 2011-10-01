@@ -26,7 +26,6 @@ Imagine uses Dragonfly, which assumes you have ImageMagick installed on your ser
 
 ## TODO
 * Allow a user to choose the default display style at album level
-* API to define a default view for albums, images (so define a default plugin)
 * Provide a standard means of wrapping with authentication
 * Provide a happy-path for attaching albums polymorphically to other objects
 * Make it look a little prettier.  Provide a stylesheet that you can include if you so desire.
