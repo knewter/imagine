@@ -4,7 +4,8 @@ module Imagine
   end
 
   module Warehouses
-    autoload :Album, File.expand_path('../../../app/warehouses/imagine/album', __FILE__)
-    autoload :Image, File.expand_path('../../../app/warehouses/imagine/image', __FILE__)
+    warehouses = File.expand_path('../../../app/warehouses/imagine/', __FILE__)
+    autoload :Album, warehouses + '/album'
+    autoload :Image, warehouses + '/image'
   end
 end

@@ -1,5 +1,5 @@
 module Imagine
-  class AlbumsController < ::ApplicationController
+  class AlbumsController < ::Imagine::ApplicationController
     def index
     end
 

@@ -1,5 +1,5 @@
 module Imagine
-  class ImagesController < ::ApplicationController
+  class ImagesController < ::Imagine::ApplicationController
     before_filter :load_album
 
     def show

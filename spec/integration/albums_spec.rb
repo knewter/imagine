@@ -26,6 +26,13 @@ describe 'albums' do
       @image = Factory(:image, :album => @album, :file_url => 'http://www.google.com/images/logo_sm.gif')
     end
     context 'with no plugin view defined in the params' do
+      before do
+        @default_plugin = ::Imagine.default_plugin
+        ::Imagine.default_plugin = nil
+      end
+      after do
+        ::Imagine.default_plugin = @default_plugin
+      end
       it 'should render the default view' do
         visit album_path(@album)
         within 'h2' do

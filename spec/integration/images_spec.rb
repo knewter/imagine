@@ -14,6 +14,12 @@ describe 'images' do
     end
   end
 
+  it 'viewing a created image' do
+    @image = Factory(:image, :album => @album, :file_url => 'http://www.google.com/images/logo_sm.gif')
+    visit album_image_path(@album, @image)
+    page.status_code.should == 200
+  end
+
   it 'creating a new one unsuccessfully' do
     visit album_path(@album)
     click_link "New Image"
