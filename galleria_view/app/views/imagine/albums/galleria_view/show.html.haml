@@ -1,0 +1,20 @@
+%h2= @album.name
+%h3 Orbit View
+
+= link_to "New Image", new_album_image_path(@album)
+
+- if @album.images.any?
+  .images#featured
+    - @album.images.each do |image|
+      = render :partial => 'imagine/images/orbit_view/image', :object => image
+
+  = javascript_include_tag 'galleria-1.2.5.min.js'
+
+  :javascript
+     Galleria.loadTheme('/assets/galleria/themes/classic/galleria.classic.min.js');
+     $(window).load(function() {
+       $('#featured').galleria({
+         width: 700,
+         height: 500
+       });
+     });

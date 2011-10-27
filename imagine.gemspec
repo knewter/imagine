@@ -16,11 +16,12 @@ Gem::Specification.new do |s|
 
   s.files = Dir["lib/**/*"] + Dir["app/**/*"] + Dir["config/**/*"] + 
             Dir["db/migrate/*"] + Dir["basic_list_view/**/*"] + Dir["orbit_view/**/*"] + 
-            ["MIT-LICENSE", "Rakefile", "README.md"]
+            Dir["galleria_view/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   # Imagine
   s.add_dependency 'imagine-basic_list_view', '~> 0.1.0'
   s.add_dependency 'imagine-orbit_view', '~> 0.1.0'
+  s.add_dependency 'imagine-galleria_view', '~> 0.1.0'
 
   s.add_dependency 'haml-rails'
   s.add_dependency 'dragonfly',        '~> 0.9.0'
