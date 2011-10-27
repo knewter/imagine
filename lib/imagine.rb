@@ -20,6 +20,6 @@ module Imagine
 end
 
 # Require the built in engines
-%w(basic_list_view orbit_view).each do |engine|
+%w(basic_list_view orbit_view galleria_view).each do |engine|
   require "imagine-#{engine}"
 end
