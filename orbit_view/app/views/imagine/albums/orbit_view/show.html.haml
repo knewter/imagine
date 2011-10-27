@@ -1,15 +1,17 @@
 %h2= @album.name
 %h3 Orbit View
 
-.images#featured
-  - @album.images.each do |image|
-    = render :partial => 'imagine/images/orbit_view/image', :object => image
-
 = link_to "New Image", new_album_image_path(@album)
 
-= javascript_include_tag 'jquery.orbit-1.2.3.min.js'
-= stylesheet_link_tag 'orbit-1.2.3.css'
-:javascript
-   $(window).load(function() {
-     $('#featured').orbit();
-   });
+- if @album.images.any?
+  .images#featured
+    - @album.images.each do |image|
+      = render :partial => 'imagine/images/orbit_view/image', :object => image
+
+  = javascript_include_tag 'jquery.orbit-1.2.3.min.js'
+  = stylesheet_link_tag 'orbit-1.2.3.css'
+
+  :javascript
+     $(window).load(function() {
+       $('#featured').orbit();
+     });

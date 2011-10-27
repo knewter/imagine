@@ -1,5 +1,5 @@
 module Imagine
-  class AlbumsController < ::ApplicationController
+  class AlbumsController < ::Imagine::ApplicationController
     def index
     end
 
@@ -34,6 +34,8 @@ module Imagine
     def render_show_view
       if params[:plugin]
         render :action => "/#{params[:plugin]}/show"
+      elsif ::Imagine.default_plugin
+        render :action => "/#{::Imagine.default_plugin}/show"
       else
         render :action => 'show'
       end

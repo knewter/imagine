@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.name          = "imagine"
   s.version       = ::Imagine.version
   s.description   = "Imagine can be dropped into an app to provide albums and images in your app.  It supports extensions to specify new view styles."
-  s.date          = "2011-08-28"
+  s.date          = "2011-09-29"
   s.summary       = "Imagine is a mountable image gallery engine for rails 3.1 and later."
   s.email         = "josh@isotope11.com"
   s.homepage      = "http://www.github.com/knewter/imagine"

@@ -2,10 +2,10 @@
 
 Gem::Specification.new do |s|
   s.name              = %q{imagine-orbit_view}
-  s.version           = %q{0.1.4}
+  s.version           = %q{0.1.9}
   s.summary           = %q{Orbit slider view for Imagine}
   s.description       = %q{A jquery slider album view for Imagine.  Uses orbit.}
-  s.date              = %q{2011-09-19}
+  s.date              = %q{2011-09-29}
   s.email             = %q{josh@isotope11.com}
   s.homepage          = %q{http://github.com/knewter/imagine}
   s.rubyforge_project = %q{imagine}

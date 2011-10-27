@@ -2,8 +2,10 @@ module Imagine
   class Engine < ::Rails::Engine
     isolate_namespace Imagine
   end
-end
 
-# FIXME: Why can't I get this into autoload for rails?
-require File.expand_path('../../../app/warehouses/imagine/album', __FILE__)
-require File.expand_path('../../../app/warehouses/imagine/image', __FILE__)
+  module Warehouses
+    warehouses = File.expand_path('../../../app/warehouses/imagine/', __FILE__)
+    autoload :Album, warehouses + '/album'
+    autoload :Image, warehouses + '/image'
+  end
+end

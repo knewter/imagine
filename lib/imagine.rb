@@ -8,6 +8,14 @@ module Imagine
     def engines
       @engines ||= []
     end
+
+    def default_plugin=(plugin)
+      @default_plugin = plugin
+    end
+
+    def default_plugin
+      @default_plugin
+    end
   end
 end
 
