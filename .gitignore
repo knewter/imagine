@@ -16,3 +16,6 @@ imagine-*.gem
 
 # vim-ruby-debugger
 posix
+
+# Gems shouldn't commit their lockfile
+Gemfile.lock
