@@ -1,5 +1,4 @@
 Imagine::Config.new do |config|
-  puts "IN IMAGINE INITIALIZER"
   # Configure your choice of orm
   #   supports: :active_record or :mongoid
   #   defaults: :active_record

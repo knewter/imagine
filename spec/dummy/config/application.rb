@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 if ENV['RAILS_ENV'] == "test_mongoid"
-  puts "LOADING MONGOID ENV"
+  puts "LOADING MONGOID"
   require 'action_controller/railtie'
   require 'action_mailer/railtie'
   require 'active_resource/railtie'
@@ -9,7 +9,7 @@ if ENV['RAILS_ENV'] == "test_mongoid"
   require 'sprockets/railtie'
   require 'mongoid'
 else
-  puts "LOADING ACTIVERECORD ENV"
+  puts "LOADING ACTIVERECORD"
   require 'rails/all'
 end
 
