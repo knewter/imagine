@@ -31,4 +31,13 @@ RSpec::Core::RakeTask.new do |t|
   t.pattern = "./spec/**/*_spec.rb"
 end
 
+desc 'run specs for travis'
+task :travis  do
+  unless ENV['RAILS_ENV'] == 'test_mongoid'
+    Rake::Task["db:create"].invoke
+    Rake::Task["db:migrate"].invoke
+  end
+  Rake::Task["spec"].invoke
+end
+
 task :default => :spec
