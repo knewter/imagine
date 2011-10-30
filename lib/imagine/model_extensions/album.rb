@@ -3,7 +3,7 @@ module Imagine
     module Album
       def self.included(model)
         model.validates :name, :presence => true
-        model.has_many :images
+        model.has_many :images, :class_name => "Imagine::Image"
         model.send :extend,  ClassMethods
         model.send :include, InstanceMethods
       end
