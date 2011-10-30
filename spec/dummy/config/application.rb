@@ -7,9 +7,9 @@ if ENV['RAILS_ENV'] == "test_mongoid"
   require 'active_resource/railtie'
   require 'rails/test_unit/railtie'
   require 'sprockets/railtie'
+  require 'mongoid'
 else
   puts "LOADING ACTIVERECORD ENV"
-  require 'action_controller/railtie'
   require 'rails/all'
 end
 
