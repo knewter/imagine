@@ -1,11 +1,13 @@
 shared: &shared
   adapter: sqlite3
-  database: db/development.sqlite3
   pool: 5
   timeout: 5000
 
 development:
   <<: *shared
+  database: db/development.sqlite3
 
 test:
   <<: *shared
+  database: db/test.sqlite3
+
