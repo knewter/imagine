@@ -20,3 +20,6 @@ posix
 
 # Gems shouldn't commit their lockfile
 Gemfile.lock
+
+# yard cache
+.yardoc/*
