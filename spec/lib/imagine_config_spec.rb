@@ -4,7 +4,7 @@ describe Imagine::Config do
 
   context "defaults" do
     it "should use the ActiveRecord orm by default" do
-      subject.orm.should == :active_record
+      subject.orm.should == ((defined?(Mongoid) && ! defined?(ActiveRecord::Base)) ? :mongoid : :active_record)
     end
     it "should have only the requested plugins activated" do
       subject.plugins.should == [ :basic_list_view, :galleria_view, :orbit_view ]
