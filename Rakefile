@@ -34,8 +34,8 @@ end
 desc 'run specs for travis'
 task :travis  do
   unless ENV['RAILS_ENV'] == 'test_mongoid'
-    Rake::Task["db:create"].invoke
-    Rake::Task["db:migrate"].invoke
+    Rake::Task["app:db:create"].invoke
+    Rake::Task["app:db:schema:load"].invoke
   end
   Rake::Task["spec"].invoke
 end
