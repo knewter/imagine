@@ -1,6 +1,17 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+if ENV['RAILS_ENV'] == "test_mongoid"
+  puts "LOADING MONGOID ENV"
+  require 'action_controller/railtie'
+  require 'action_mailer/railtie'
+  require 'active_resource/railtie'
+  require 'rails/test_unit/railtie'
+  require 'sprockets/railtie'
+else
+  puts "LOADING ACTIVERECORD ENV"
+  require 'action_controller/railtie'
+  require 'rails/all'
+end
 
 Bundler.require
 require "imagine"

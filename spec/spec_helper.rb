@@ -8,14 +8,19 @@ Spork.prefork do
   # need to restart spork for it take effect.
 
   # Configure Rails Environment
-
-  ENV["RAILS_ENV"] = "test"
+  test_envs = %w( test test_mongoid )
+  unless test_envs.include?(ENV["RAILS_ENV"])
+    ENV["RAILS_ENV"] = "test"
+  end
 
   require File.expand_path("../dummy/config/environment.rb", __FILE__)
   require 'rspec/rails'
-  begin
-    #require 'ruby-debug'
-  rescue
+
+  case ENV["RAILS_ENV"].to_sym
+  when :test
+    require 'shoulda-matchers'
+  when :test_mongoid
+    require 'mongoid-rspec'
   end
 
   Rails.backtrace_cleaner.remove_silencers!
