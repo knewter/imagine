@@ -12,7 +12,7 @@ module Imagine
 
     def orm(orm=nil)
       @orm = orm if orm
-      @orm ||= :active_record
+      @orm ||= (defined?(Mongoid) && ! defined?(ActiveRecord::Base)) ? :mongoid : :active_record
     end
 
     def plugins(plugins=nil)
