@@ -29,7 +29,11 @@ Spork.prefork do
   Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
   RSpec.configure do |config|
-    config.use_transactional_fixtures = false
+    if ENV["RAILS_ENV"] == "test_mongoid"
+      config.include Mongoid::Matchers
+    else
+      config.use_transactional_fixtures = false
+    end
   end
 end
 
