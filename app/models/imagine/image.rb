@@ -13,7 +13,6 @@ module Imagine
       store_in :imagine_images
       field :file_name, :type => String
       field :file_uid,  :type => String
-      field :album_id,  :type => String
     end
   else
     raise Imagine::OrmNotSupportedError.new("#{Imagine.orm}, though we do accept nice pull requests :)")
