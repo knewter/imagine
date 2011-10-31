@@ -1,10 +1,14 @@
-script: "bundle exec rake db:create db:migrate spec"
+script: "bundle exec rake travis"
 notifications:
   email:
     - josh@isotope11.com
+    - bram@craniumisajar.com
 rvm:
   - 1.8.7
   - 1.9.2
   - 1.9.3
   #- rbx-2.0
   #- jruby
+env:
+  - RAILS_ENV=test
+  - RAILS_ENV=test_mongoid

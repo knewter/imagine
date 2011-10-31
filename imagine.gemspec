@@ -14,9 +14,8 @@ Gem::Specification.new do |s|
   s.license       = %q{MIT}
   s.require_paths = %w(lib)
 
-  s.files = Dir["lib/**/*"] + Dir["app/**/*"] + Dir["config/**/*"] + 
-            Dir["db/migrate/*"] + Dir["basic_list_view/**/*"] + Dir["orbit_view/**/*"] + 
-            Dir["galleria_view/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["lib/**/*"] + Dir["app/**/*"] + Dir["config/**/*"] + Dir["db/migrate/*"] +
+            Dir["plugins/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   # Imagine
   s.add_dependency 'imagine-basic_list_view', '~> 0.1.0'
@@ -27,8 +26,4 @@ Gem::Specification.new do |s|
   s.add_dependency 'dragonfly',        '~> 0.9.0'
   s.add_dependency 'rack-cache',       '>= 0.5.3'
 
-  s.add_development_dependency "rspec-rails", "~> 2.5"
-  s.add_development_dependency "capybara"
-  s.add_development_dependency "factory_girl"
-  s.add_development_dependency "spork"
 end

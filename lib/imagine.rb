@@ -1,25 +1,25 @@
-# Prepare plugin system
-%w(engine plugins plugin).each do |lib|
+%w( config engine plugins plugin model_extensions/album model_extensions/image ).each do |lib|
   require "imagine/#{lib}"
 end
 
 module Imagine
   class << self
-    def engines
-      @engines ||= []
+    def configure(options={}, &block)
+      @config ||= Imagine::Config.new(options, &block)
     end
 
-    def default_plugin=(plugin)
-      @default_plugin = plugin
+    def config
+      @config ||= Imagine::Config.new
     end
 
-    def default_plugin
-      @default_plugin
+    def method_missing(meth, *args)
+      super unless config.respond_to?(meth)
+      config.send(meth, *args)
     end
   end
+  class OrmNotSupportedError < StandardError; end
 end
 
-# Require the built in engines
-%w(basic_list_view orbit_view galleria_view).each do |engine|
-  require "imagine-#{engine}"
+Imagine.plugins.each do |plugin|
+  require "imagine-#{plugin}"
 end

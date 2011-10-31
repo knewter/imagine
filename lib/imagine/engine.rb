@@ -5,7 +5,7 @@ module Imagine
 
   module Warehouses
     warehouses = File.expand_path('../../../app/warehouses/imagine/', __FILE__)
-    autoload :Album, warehouses + '/album'
-    autoload :Image, warehouses + '/image'
+    autoload :Album, File.join(warehouses, 'album')
+    autoload :Image, File.join(warehouses, 'image')
   end
 end

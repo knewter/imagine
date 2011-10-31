@@ -1,23 +1,26 @@
-require 'simplecov'
-SimpleCov.start
-
 require 'rubygems'
+require 'simplecov'
 require 'spork'
 
 Spork.prefork do
-  # Loading more in this block will cause your tests to run faster. However, 
+  # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
 
   # Configure Rails Environment
-
-  ENV["RAILS_ENV"] = "test"
+  test_envs = %w( test test_mongoid )
+  unless test_envs.include?(ENV["RAILS_ENV"])
+    ENV["RAILS_ENV"] = "test"
+  end
 
   require File.expand_path("../dummy/config/environment.rb", __FILE__)
   require 'rspec/rails'
-  begin
-    #require 'ruby-debug'
-  rescue
+
+  case ENV["RAILS_ENV"].to_sym
+  when :test
+    require 'shoulda-matchers'
+  when :test_mongoid
+    require 'mongoid-rspec'
   end
 
   Rails.backtrace_cleaner.remove_silencers!
@@ -26,7 +29,11 @@ Spork.prefork do
   Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
   RSpec.configure do |config|
-    config.use_transactional_fixtures = false
+    if ENV["RAILS_ENV"] == "test_mongoid"
+      config.include Mongoid::Matchers
+    else
+      config.use_transactional_fixtures = false
+    end
   end
 end
 
