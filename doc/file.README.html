@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" charset="utf-8">
+      (function($){
+        // YARD automatically creates a table of contents
+        // Let's place it inside .col1, instead of #content
+        $(document).ready(function(){
+          $('#toc').prependTo($('.col1'));
+          
+        });
+      })(jQuery);
+    </script>
+  </head>
+  <body>
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16382932-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- *************** -->
+
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="header" class="clearfix">
+      
+      <div id="logo">Imagine (v 0.2.3)</div>
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+    </div>
+
+    <div>
+      <iframe id="search_frame"></iframe>
+    </div>
+
+    <div id="content" class="clearfix">
+      <div class="col1">
+        <div id='filecontents'><h2>Imagine</h2>
+
+<p><a href="http://travis-ci.org/knewter/imagine"><img src="http://travis-ci.org/knewter/imagine.png" alt="Travis CI Build Status" /></a></p>
+
+<p>Imagine is a <a href="http://rubyonrails.org" target="_parent" title="Rails">Rails</a> engine that provides drop-in image gallery support. It is extensible, and aims to be the de facto standard for Rails image galleries. Its a Rails image gallery, that's mountable.  Works on rails 3.1 at least :) Should work on 3.x</p>
+
+<p>It's still in active development.</p>
+
+<ul>
+<li><a href="http://www.github.com/knewter/imagine">Github project</a></li>
+</ul>
+
+
+<p>See the links on the right for more info.</p>
+
+<h2>Installation</h2>
+
+<p>Add this to the Gemfile of your Rails 3.1 project:</p>
+
+<pre class="code"><span class='gem identifier id'>gem</span> <span class='string val'>'imagine'</span>
+</pre>
+
+<p>Bundle that puppy up:</p>
+
+<pre class="code"><span class='bundle identifier id'>bundle</span> <span class='install identifier id'>install</span>
+</pre>
+
+<p>Generate an initializer file with:</p>
+
+<pre class="code"><span class='rails identifier id'>rails</span> <span class='generate identifier id'>generate</span> <span class='imagine identifier id'>imagine</span><span class='symbol val'>:initializer</span>
+</pre>
+
+<p>Edit it with a sensible editor to taste:</p>
+
+<pre class="code"><span class='vi identifier id'>vi</span> <span class='config identifier id'>config</span><span class='div op'>/</span><span class='initializers identifier id'>initializers</span><span class='div op'>/</span><span class='imagine identifier id'>imagine</span><span class='dot token'>.</span><span class='rb identifier id'>rb</span>
+</pre>
+
+<p>Install the migrations if you use ActiveRecord with:</p>
+
+<pre class="code"><span class='rails identifier id'>rails</span> <span class='generate identifier id'>generate</span> <span class='imagine identifier id'>imagine</span><span class='symbol val'>:migration</span>
+</pre>
+
+<p>And run the migrations with:</p>
+
+<pre class="code"><span class='rake identifier id'>rake</span> <span class='db identifier id'>db</span><span class='symbol val'>:migrate</span>
+</pre>
+
+<p>Imagine mounting Imagine, then do it!:</p>
+
+<pre class="code"><span class='mount identifier id'>mount</span> <span class='Imagine constant id'>Imagine</span><span class='colon2 op'>::</span><span class='Engine constant id'>Engine</span><span class='comma token'>,</span> <span class='symbol val'>:at</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='string val'>&quot;/imagine&quot;</span>
+</pre>
+
+<p>Finally, visit /imagine/albums in your browser to get started.</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>Mountable rails engine. Drops in to provide photo album support.</li>
+<li>Plugin system allows new album view types to be built as minimal rails engines of their own.</li>
+<li>Set default album style in your app.</li>
+<li>View any album in any style by passing the plugin in params.</li>
+<li>Supports ActiveRecord or Mongoid</li>
+</ul>
+
+
+<h2>External Dependencies</h2>
+
+<p>Imagine uses Dragonfly, which assumes you have ImageMagick installed on your server.</p>
+
+<h2>Plugins</h2>
+
+<p>See the documentation.</p>
+
+<h2>Testing</h2>
+
+<p>I've got this set up to use spork, so just do the following:</p>
+
+<p>In one terminal, do:</p>
+
+<pre class="code"><span class='bundle identifier id'>bundle</span> <span class='exec identifier id'>exec</span> <span class='spork identifier id'>spork</span> <span class='rspec identifier id'>rspec</span>
+</pre>
+
+<p>In another terminal, once that's done, you can:</p>
+
+<pre class="code"><span class='bundle identifier id'>bundle</span> <span class='exec identifier id'>exec</span> <span class='rake identifier id'>rake</span> <span class='spec identifier id'>spec</span>
+<span class='RAILS_ENV constant id'>RAILS_ENV</span><span class='assign token'>=</span><span class='test_mongoid identifier id'>test_mongoid</span> <span class='bundle identifier id'>bundle</span> <span class='exec identifier id'>exec</span> <span class='rake identifier id'>rake</span> <span class='spec identifier id'>spec</span>
+</pre>
+
+<h2>Todo</h2>
+
+<ul>
+<li>Allow a user to choose the default display style at album level</li>
+<li>Provide a standard means of wrapping with authentication</li>
+<li>Provide a happy-path for attaching albums polymorphically to other objects</li>
+<li>Make it look a little prettier.  Provide a stylesheet that you can include if you so desire.</li>
+</ul>
+
+
+<h2>Contributing</h2>
+
+<p>If you want to contribute, you can do so a few different ways. You could fork us on <a href="http://github.com/knewter/imagine" target="_parent" title="github">github</a>, you could build a new album view plugin, or you could just <a href="http://www.github.com/knewter/imagine/issues" target="_parent" title="give us some feedback or suggestions">give us some feedback or suggestions</a>.</p>
+
+<h2>Issues/Suggestions/Questions</h2>
+
+<p>Please use the <a href="http://github.com/knewter/imagine/issues" target="_parent" title="github issue tracker">github issue tracker</a>.</p>
+
+<h2>Credits</h2>
+
+<ul>
+<li><a href="http://github.com/isotope11">Isotope11</a> (sponsors)</li>
+<li><a href="http://github.com/knewter">Josh Adams</a> (author)</li>
+<li><a href="http://github.com/bramswenson">Bram Swenson</a> (contributor and documentation author)</li>
+<li><a href="http://github.com/markevans">Mark Evans</a> (author of Dragonfly and these yard templates)</li>
+<li><a href="http://github.com/resolve">Resolve</a> Some code (plugin system, .travis.yml) lifted ungraciously from <a href="http://github.com/resolve/refinerycms.">http://github.com/resolve/refinerycms.</a>  Those guys are awesome.</li>
+<li>Loads of helpful comments, issues, questions, suggestions and insults from others - you know who you are!</li>
+</ul>
+
+
+<h2>License</h2>
+
+<p>This project uses MIT-LICENSE.</p>
+
+<h2>Copyright</h2>
+
+<p>Copyright (c) 2011 Josh Adams. See LICENSE for details.</p>
+</div>
+      </div>
+      <div class="col2">
+        <ul class="main_files clearfix">
+          <li><a href="file.README.html" title="Home">Home</a></li><li><a href="file.GeneralUsage.html" title="General usage">General usage</a></li><li><a href="file.Configuration.html" title="Configuration">Configuration</a></li><li><a href="file.Models.html" title="Models">Models</a></li><li><a href="file.Controllers.html" title="Controllers">Controllers</a></li><li><a href="file.Views.html" title="Views">Views</a></li><li><a href="file.ViewHelpers.html" title="View Helpers">View Helpers</a></li><li><a href="file.Routes.html" title="Mount this app!">Mount this app!</a></li><li><a href="file.Plugins.html" title="Plugins">Plugins</a></li><li><a href="file.PluginDevelopment.html" title="Plugin Development">Plugin Development</a></li><li><a href="file.Mongoid.html" title="Mongoid">Mongoid</a></li><li><a href="file.Dragonfly.html" title="Dragonfly">Dragonfly</a></li><li><a href="file.History.html" title="History">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">
+  Generated on Sun Oct 30 17:01:17 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.3 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>

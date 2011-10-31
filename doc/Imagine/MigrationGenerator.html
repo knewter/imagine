@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Imagine::MigrationGenerator
+  
+    &mdash; Documentation by YARD 0.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" charset="utf-8">
+      (function($){
+        // YARD automatically creates a table of contents
+        // Let's place it inside .col1, instead of #content
+        $(document).ready(function(){
+          $('#toc').prependTo($('.col1'));
+          
+        });
+      })(jQuery);
+    </script>
+  </head>
+  <body>
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16382932-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- *************** -->
+
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="header" class="clearfix">
+      
+      <div id="logo">Imagine (v 0.2.3)</div>
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+    </div>
+
+    <div>
+      <iframe id="search_frame"></iframe>
+    </div>
+
+    <div id="content" class="clearfix">
+      <div class="col1">
+        <h1>Class: Imagine::MigrationGenerator
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Rails::Generators::Base</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Rails::Generators::Base</li>
+          
+            <li class="next">Imagine::MigrationGenerator</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2">Rails::Generators::Migration</dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/rails/generators/imagine/migration_generator.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  
+  
+
+
+  
+  
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#next_migration_number-class_method" title="next_migration_number (class method)">+ (Object) <strong>next_migration_number</strong>(dirname) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>:nodoc:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#source_root-class_method" title="source_root (class method)">+ (Object) <strong>source_root</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_migration_file-instance_method" title="#create_migration_file (instance method)">- (Object) <strong>create_migration_file</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="next_migration_number-class_method">
+  
+    + (<tt>Object</tt>) <strong>next_migration_number</strong>(dirname) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>:nodoc:</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15
+16
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rails/generators/imagine/migration_generator.rb', line 13</span>
+
+<span class='def def kw'>def</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='next_migration_number identifier id'>next_migration_number</span><span class='lparen token'>(</span><span class='dirname identifier id'>dirname</span><span class='rparen token'>)</span> <span class='comment val'>#:nodoc:</span>
+  <span class='if if kw'>if</span> <span class='ActiveRecord constant id'>ActiveRecord</span><span class='colon2 op'>::</span><span class='Base constant id'>Base</span><span class='dot token'>.</span><span class='timestamped_migrations identifier id'>timestamped_migrations</span>
+    <span class='Time constant id'>Time</span><span class='dot token'>.</span><span class='now identifier id'>now</span><span class='dot token'>.</span><span class='utc identifier id'>utc</span><span class='dot token'>.</span><span class='strftime identifier id'>strftime</span><span class='lparen token'>(</span><span class='string val'>&quot;%Y%m%d%H%M%S&quot;</span><span class='rparen token'>)</span>
+  <span class='else else kw'>else</span>
+    <span class='string val'>&quot;%.3d&quot;</span> <span class='mod op'>%</span> <span class='lparen token'>(</span><span class='current_migration_number identifier id'>current_migration_number</span><span class='lparen token'>(</span><span class='dirname identifier id'>dirname</span><span class='rparen token'>)</span> <span class='plus op'>+</span> <span class='integer val'>1</span><span class='rparen token'>)</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="source_root-class_method">
+  
+    + (<tt>Object</tt>) <strong>source_root</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rails/generators/imagine/migration_generator.rb', line 9</span>
+
+<span class='def def kw'>def</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='source_root identifier id'>source_root</span>
+  <span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='File constant id'>File</span><span class='dot token'>.</span><span class='dirname identifier id'>dirname</span><span class='lparen token'>(</span><span class='__FILE__ __file__ kw'>__FILE__</span><span class='rparen token'>)</span><span class='comma token'>,</span> <span class='string val'>'templates'</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="create_migration_file-instance_method">
+  
+    - (<tt>Object</tt>) <strong>create_migration_file</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+21
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rails/generators/imagine/migration_generator.rb', line 21</span>
+
+<span class='def def kw'>def</span> <span class='create_migration_file identifier id'>create_migration_file</span>
+  <span class='f identifier id'>f</span> <span class='assign token'>=</span> <span class='File constant id'>File</span><span class='dot token'>.</span><span class='join identifier id'>join</span><span class='lparen token'>(</span><span class='File constant id'>File</span><span class='dot token'>.</span><span class='dirname identifier id'>dirname</span><span class='lparen token'>(</span><span class='__FILE__ __file__ kw'>__FILE__</span><span class='rparen token'>)</span><span class='comma token'>,</span> <span class='string val'>'templates'</span><span class='comma token'>,</span> <span class='string val'>'migration.rb'</span><span class='rparen token'>)</span>
+  <span class='migration_template identifier id'>migration_template</span> <span class='f identifier id'>f</span><span class='comma token'>,</span> <span class='string val'>'db/migrate/create_imagine_tables.rb'</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+      </div>
+      <div class="col2">
+        <ul class="main_files clearfix">
+          <li><a href="../file.README.html" title="Home">Home</a></li><li><a href="../file.GeneralUsage.html" title="General usage">General usage</a></li><li><a href="../file.Configuration.html" title="Configuration">Configuration</a></li><li><a href="../file.Models.html" title="Models">Models</a></li><li><a href="../file.Controllers.html" title="Controllers">Controllers</a></li><li><a href="../file.Views.html" title="Views">Views</a></li><li><a href="../file.ViewHelpers.html" title="View Helpers">View Helpers</a></li><li><a href="../file.Routes.html" title="Mount this app!">Mount this app!</a></li><li><a href="../file.Plugins.html" title="Plugins">Plugins</a></li><li><a href="../file.PluginDevelopment.html" title="Plugin Development">Plugin Development</a></li><li><a href="../file.Mongoid.html" title="Mongoid">Mongoid</a></li><li><a href="../file.Dragonfly.html" title="Dragonfly">Dragonfly</a></li><li><a href="../file.History.html" title="History">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">
+  Generated on Sun Oct 30 17:01:17 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.3 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>

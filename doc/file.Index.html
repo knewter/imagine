@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: Index
+  
+    &mdash; Documentation by YARD 0.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" charset="utf-8">
+      (function($){
+        // YARD automatically creates a table of contents
+        // Let's place it inside .col1, instead of #content
+        $(document).ready(function(){
+          $('#toc').prependTo($('.col1'));
+          
+        });
+      })(jQuery);
+    </script>
+  </head>
+  <body>
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16382932-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- *************** -->
+
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="header" class="clearfix">
+      
+      <div id="logo">Imagine (v 0.2.3)</div>
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+    </div>
+
+    <div>
+      <iframe id="search_frame"></iframe>
+    </div>
+
+    <div id="content" class="clearfix">
+      <div class="col1">
+        <div id='filecontents'><p>Imagine is a <a href="http://rubyonrails.org" target="_parent" title="Rails">Rails</a> engine that provides drop-in image gallery support. It is extensible, and aims to be the de facto standard for Rails image galleries.</p>
+
+<p>See the links on the right for more info.</p>
+
+<h2>Installation</h2>
+
+<pre class="code"><span class='comment val'># Add this to the Gemfile of your Rails 3.1 project</span>
+<span class='gem identifier id'>gem</span> <span class='string val'>'imagine'</span> <span class='andop op'>&amp;&amp;</span> <span class='bundle identifier id'>bundle</span> <span class='install identifier id'>install</span>
+
+<span class='comment val'># Generate an initializer file and edit it to taste</span>
+<span class='rails identifier id'>rails</span> <span class='generate identifier id'>generate</span> <span class='imagine identifier id'>imagine</span><span class='symbol val'>:initializer</span>
+<span class='vi identifier id'>vi</span> <span class='config identifier id'>config</span><span class='div op'>/</span><span class='initializers identifier id'>initializers</span><span class='div op'>/</span><span class='imagine identifier id'>imagine</span><span class='dot token'>.</span><span class='rb identifier id'>rb</span>
+
+<span class='comment val'># Generate and run Imagine migrations if your using ActiveRecord</span>
+<span class='rails identifier id'>rails</span> <span class='generate identifier id'>generate</span> <span class='imagine identifier id'>imagine</span><span class='symbol val'>:migration</span>
+<span class='rake identifier id'>rake</span> <span class='db identifier id'>db</span><span class='symbol val'>:migrate</span>
+</pre>
+
+<h2>Features</h2>
+
+<ul>
+<li>Mountable rails engine. Drops in to provide photo album support.</li>
+<li>Plugin system allows new album view types to be built as minimal rails engines of their own.</li>
+<li>Set default album style in your app.</li>
+<li>View any album in any style by passing the plugin in params.</li>
+<li>Supports ActiveRecord or Mongoid</li>
+</ul>
+
+
+<h2>Contributing</h2>
+
+<p>If you want to contribute, you can do so a few different ways. You could fork us on <a href="http://github.com/knewter/imagine" target="_parent" title="github">github</a>, you could build a new album view plugin, or you could just <a href="http://www.github.com/knewter/imagine/issues" target="_parent" title="give us some feedback or suggestions">give us some feedback or suggestions</a>.</p>
+
+<h2>Issues</h2>
+
+<p>Please use the <a href="http://github.com/knewter/imagine/issues" target="_parent" title="github issue tracker">github issue tracker</a>.</p>
+
+<h2>Suggestions/Questions</h2>
+
+<h2>Credits</h2>
+
+<ul>
+<li><a href="http://github.com/knewter">Josh Adams</a> (author)</li>
+<li><a href="http://github.com/isotope11">Isotope11</a> (contributor)</li>
+<li><a href="http://github.com/bramswenson">Bram Swenson</a> (contributor and documentation author)</li>
+<li><a href="http://github.com/markevans">Mark Evans</a> (author of Dragonfly and these yard templates)</li>
+<li>Loads of helpful comments, issues, questions, suggestions and insults from others - you know who you are!</li>
+</ul>
+
+
+<h2>Copyright</h2>
+
+<p>Copyright (c) 2011 Josh Adams. See LICENSE for details.</p>
+</div>
+      </div>
+      <div class="col2">
+        <ul class="main_files clearfix">
+          <li><a href="file.README.html" title="Home">Home</a></li><li><a href="file.GeneralUsage.html" title="General usage">General usage</a></li><li><a href="file.Configuration.html" title="Configuration">Configuration</a></li><li><a href="file.Models.html" title="Models">Models</a></li><li><a href="file.Controllers.html" title="Controllers">Controllers</a></li><li><a href="file.Views.html" title="Views">Views</a></li><li><a href="file.ViewHelpers.html" title="View Helpers">View Helpers</a></li><li><a href="file.Routes.html" title="Mount this app!">Mount this app!</a></li><li><a href="file.Plugins.html" title="Plugins">Plugins</a></li><li><a href="file.PluginDevelopment.html" title="Plugin Development">Plugin Development</a></li><li><a href="file.Mongoid.html" title="Mongoid">Mongoid</a></li><li><a href="file.Dragonfly.html" title="Dragonfly">Dragonfly</a></li><li><a href="file.History.html" title="History">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">
+  Generated on Sun Oct 30 16:40:12 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.3 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>

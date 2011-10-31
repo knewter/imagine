@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: CreateImagineTables
+  
+    &mdash; Documentation by YARD 0.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" charset="utf-8">
+      (function($){
+        // YARD automatically creates a table of contents
+        // Let's place it inside .col1, instead of #content
+        $(document).ready(function(){
+          $('#toc').prependTo($('.col1'));
+          
+        });
+      })(jQuery);
+    </script>
+  </head>
+  <body>
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16382932-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- *************** -->
+
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="header" class="clearfix">
+      
+      <div id="logo">Imagine (v 0.2.3)</div>
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+    </div>
+
+    <div>
+      <iframe id="search_frame"></iframe>
+    </div>
+
+    <div id="content" class="clearfix">
+      <div class="col1">
+        <h1>Class: CreateImagineTables
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">ActiveRecord::Migration</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">ActiveRecord::Migration</li>
+          
+            <li class="next">CreateImagineTables</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/rails/generators/imagine/templates/migration.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  
+
+
+  
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#change-instance_method" title="#change (instance method)">- (Object) <strong>change</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="change-instance_method">
+  
+    - (<tt>Object</tt>) <strong>change</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/rails/generators/imagine/templates/migration.rb', line 2</span>
+
+<span class='def def kw'>def</span> <span class='change identifier id'>change</span>
+  <span class='create_table identifier id'>create_table</span> <span class='symbol val'>:imagine_albums</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='t identifier id'>t</span><span class='bitor op'>|</span>
+    <span class='t identifier id'>t</span><span class='dot token'>.</span><span class='string identifier id'>string</span> <span class='symbol val'>:name</span>
+  <span class='end end kw'>end</span>
+  <span class='create_table identifier id'>create_table</span> <span class='symbol val'>:imagine_images</span> <span class='do do kw'>do</span> <span class='bitor op'>|</span><span class='t identifier id'>t</span><span class='bitor op'>|</span>
+    <span class='t identifier id'>t</span><span class='dot token'>.</span><span class='string identifier id'>string</span>  <span class='symbol val'>:file_name</span>
+    <span class='t identifier id'>t</span><span class='dot token'>.</span><span class='string identifier id'>string</span>  <span class='symbol val'>:file_uid</span>
+    <span class='t identifier id'>t</span><span class='dot token'>.</span><span class='integer identifier id'>integer</span> <span class='symbol val'>:album_id</span>
+  <span class='end end kw'>end</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+      </div>
+      <div class="col2">
+        <ul class="main_files clearfix">
+          <li><a href="file.README.html" title="Home">Home</a></li><li><a href="file.GeneralUsage.html" title="General usage">General usage</a></li><li><a href="file.Configuration.html" title="Configuration">Configuration</a></li><li><a href="file.Models.html" title="Models">Models</a></li><li><a href="file.Controllers.html" title="Controllers">Controllers</a></li><li><a href="file.Views.html" title="Views">Views</a></li><li><a href="file.ViewHelpers.html" title="View Helpers">View Helpers</a></li><li><a href="file.Routes.html" title="Mount this app!">Mount this app!</a></li><li><a href="file.Plugins.html" title="Plugins">Plugins</a></li><li><a href="file.PluginDevelopment.html" title="Plugin Development">Plugin Development</a></li><li><a href="file.Mongoid.html" title="Mongoid">Mongoid</a></li><li><a href="file.Dragonfly.html" title="Dragonfly">Dragonfly</a></li><li><a href="file.History.html" title="History">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">
+  Generated on Sun Oct 30 17:01:17 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.3 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>

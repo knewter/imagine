@@ -1,48 +1,65 @@
-# Imagine
+Imagine
+-------
 [![Travis CI Build Status](http://travis-ci.org/knewter/imagine.png)](http://travis-ci.org/knewter/imagine)
 
-A rails image gallery, that's mountable.  Works on rails 3.1 at least :)
+Imagine is a {http://rubyonrails.org Rails} engine that provides drop-in image gallery support. It is extensible, and aims to be the de facto standard for Rails image galleries. Its a Rails image gallery, that's mountable.  Works on rails 3.1 at least :) Should work on 3.x
+
 It's still in active development.
 
 * [Github project](http://www.github.com/knewter/imagine)
 
-## USAGE
-To use Imagine in your app, simply add it to your Gemfile.  Then, mount it by:
+See the links on the right for more info.
 
-    mount Imagine::Engine, :at => "/imagine"
+Installation
+------------
+Add this to the Gemfile of your Rails 3.1 project:
 
-Install the migrations with:
+    gem 'imagine'
 
-    bundle exec rake imagine:install:migrations
+Bundle that puppy up:
+
+    bundle install
+
+Generate an initializer file with:
+
+    rails generate imagine:initializer
+
+Edit it with a sensible editor to taste:
+
+    vi config/initializers/imagine.rb
+
+Install the migrations if you use ActiveRecord with:
+
+    rails generate imagine:migration
 
 And run the migrations with:
 
-    bundle exec rake db:migrate
+    rake db:migrate
+
+Imagine mounting Imagine, then do it!:
+
+    mount Imagine::Engine, :at => "/imagine"
 
 Finally, visit /imagine/albums in your browser to get started.
 
-## EXTERNAL DEPENDENCIES
+Features
+--------
+* Mountable rails engine. Drops in to provide photo album support.
+* Plugin system allows new album view types to be built as minimal rails engines of their own.
+* Set default album style in your app.
+* View any album in any style by passing the plugin in params.
+* Supports ActiveRecord or Mongoid
+
+External Dependencies
+---------------------
 Imagine uses Dragonfly, which assumes you have ImageMagick installed on your server.
 
-## TODO
-* Allow a user to choose the default display style at album level
-* Provide a standard means of wrapping with authentication
-* Provide a happy-path for attaching albums polymorphically to other objects
-* Make it look a little prettier.  Provide a stylesheet that you can include if you so desire.
+Plugins
+-------
+See the documentation.
 
-## Plugins
-New album display types are specified in plugins.
-
-Plugins are just gems.  There is a plugin shipped with the core project called
-`imagine_basic_list`.  It should serve as a good template for building your own.
-There is another plugin called `orbit_view` that displays the album using jquery
-orbit.
-
-They're just rails engines, that have a bit of configuration logic to let
-Imagine know that they should be incuded in the template style lists.
-
-
-## Testing
+Testing
+-------
 I've got this set up to use spork, so just do the following:
 
 In one terminal, do:
@@ -51,13 +68,37 @@ In one terminal, do:
 
 In another terminal, once that's done, you can:
 
-    bundle exec rspec spec
+    bundle exec rake spec
+    RAILS_ENV=test_mongoid bundle exec rake spec
 
-## License
+Todo
+----
+* Allow a user to choose the default display style at album level
+* Provide a standard means of wrapping with authentication
+* Provide a happy-path for attaching albums polymorphically to other objects
+* Make it look a little prettier.  Provide a stylesheet that you can include if you so desire.
+
+Contributing
+------------
+If you want to contribute, you can do so a few different ways. You could fork us on {http://github.com/knewter/imagine github}, you could build a new album view plugin, or you could just {http://www.github.com/knewter/imagine/issues give us some feedback or suggestions}.
+
+Issues/Suggestions/Questions
+------
+Please use the {http://github.com/knewter/imagine/issues github issue tracker}.
+
+Credits
+-------
+- [Isotope11](http://github.com/isotope11) (sponsors)
+- [Josh Adams](http://github.com/knewter) (author)
+- [Bram Swenson](http://github.com/bramswenson) (contributor and documentation author)
+- [Mark Evans](http://github.com/markevans) (author of Dragonfly and these yard templates)
+- [Resolve](http://github.com/resolve) Some code (plugin system, .travis.yml) lifted ungraciously from http://github.com/resolve/refinerycms.  Those guys are awesome.
+- Loads of helpful comments, issues, questions, suggestions and insults from others - you know who you are!
+
+License
+-------
 This project uses MIT-LICENSE.
 
-## Contributors
-Josh Adams (josh@isotope11.com)
-
-Some code (plugin system, .travis.yml) lifted ungraciously from http://github.com/resolve/refinerycms.  Those guys are awesome.
-
+Copyright
+---------
+Copyright (c) 2011 Josh Adams. See LICENSE for details.

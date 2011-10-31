@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: Imagine::Plugin
+  
+    &mdash; Documentation by YARD 0.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" charset="utf-8">
+      (function($){
+        // YARD automatically creates a table of contents
+        // Let's place it inside .col1, instead of #content
+        $(document).ready(function(){
+          $('#toc').prependTo($('.col1'));
+          
+        });
+      })(jQuery);
+    </script>
+  </head>
+  <body>
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16382932-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- *************** -->
+
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="header" class="clearfix">
+      
+      <div id="logo">Imagine (v 0.2.3)</div>
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+    </div>
+
+    <div>
+      <iframe id="search_frame"></iframe>
+    </div>
+
+    <div id="content" class="clearfix">
+      <div class="col1">
+        <h1>Class: Imagine::Plugin
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Imagine::Plugin</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/imagine/plugin.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#description-instance_method" title="#description (instance method)">- (Object) <strong>description</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title readonly">readonly</span>
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute description.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#directory-instance_method" title="#directory (instance method)">- (Object) <strong>directory</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute directory.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-instance_method" title="#name (instance method)">- (Object) <strong>name</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute name.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pathname-instance_method" title="#pathname (instance method)">- (Object) <strong>pathname</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute pathname.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#version-instance_method" title="#version (instance method)">- (Object) <strong>version</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute version.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#register-class_method" title="register (class method)">+ (Object) <strong>register</strong> {|plugin=self.new| ... }</a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <span id="description-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="description-instance_method">
+  
+    - (<tt>Object</tt>) <strong>description</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute description</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine/plugin.rb', line 7</span>
+
+<span class='def def kw'>def</span> <span class='description identifier id'>description</span>
+  <span class='@description ivar id'>@description</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="directory=-instance_method"></span>
+      <span id="directory-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="directory-instance_method">
+  
+    - (<tt>Object</tt>) <strong>directory</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute directory</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine/plugin.rb', line 6</span>
+
+<span class='def def kw'>def</span> <span class='directory identifier id'>directory</span>
+  <span class='@directory ivar id'>@directory</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="name=-instance_method"></span>
+      <span id="name-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="name-instance_method">
+  
+    - (<tt>Object</tt>) <strong>name</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute name</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine/plugin.rb', line 6</span>
+
+<span class='def def kw'>def</span> <span class='name identifier id'>name</span>
+  <span class='@name ivar id'>@name</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="pathname=-instance_method"></span>
+      <span id="pathname-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="pathname-instance_method">
+  
+    - (<tt>Object</tt>) <strong>pathname</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute pathname</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine/plugin.rb', line 6</span>
+
+<span class='def def kw'>def</span> <span class='pathname identifier id'>pathname</span>
+  <span class='@pathname ivar id'>@pathname</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="version=-instance_method"></span>
+      <span id="version-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="version-instance_method">
+  
+    - (<tt>Object</tt>) <strong>version</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute version</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+6
+7
+8</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine/plugin.rb', line 6</span>
+
+<span class='def def kw'>def</span> <span class='version identifier id'>version</span>
+  <span class='@version ivar id'>@version</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="register-class_method">
+  
+    + (<tt>Object</tt>) <strong>register</strong> {|plugin=self.new| ... }
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Yields:</h3>
+<ul class="yield">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>plugin=self.new</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11
+12
+13
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine/plugin.rb', line 9</span>
+
+<span class='def def kw'>def</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='register identifier id'>register</span><span class='lparen token'>(</span><span class='bitand op'>&amp;</span><span class='block identifier id'>block</span><span class='rparen token'>)</span>
+  <span class='yield yield kw'>yield</span><span class='lparen token'>(</span><span class='plugin identifier id'>plugin</span> <span class='assign token'>=</span> <span class='self self kw'>self</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='rparen token'>)</span>
+
+  <span class='raise identifier id'>raise</span> <span class='dstring node'>&quot;A plugin MUST have a name!: #{plugin.inspect}&quot;</span> <span class='if if_mod kw'>if</span> <span class='plugin identifier id'>plugin</span><span class='dot token'>.</span><span class='name identifier id'>name</span><span class='dot token'>.</span><span class='blank? fid id'>blank?</span>
+
+  <span class='comment val'># add the new plugin to the collection of registered plugins</span>
+  <span class='colon3 op'>::</span><span class='Imagine constant id'>Imagine</span><span class='colon2 op'>::</span><span class='Plugins constant id'>Plugins</span><span class='dot token'>.</span><span class='registered identifier id'>registered</span> <span class='lshft op'>&lt;&lt;</span> <span class='plugin identifier id'>plugin</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+      </div>
+      <div class="col2">
+        <ul class="main_files clearfix">
+          <li><a href="../file.README.html" title="Home">Home</a></li><li><a href="../file.GeneralUsage.html" title="General usage">General usage</a></li><li><a href="../file.Configuration.html" title="Configuration">Configuration</a></li><li><a href="../file.Models.html" title="Models">Models</a></li><li><a href="../file.Controllers.html" title="Controllers">Controllers</a></li><li><a href="../file.Views.html" title="Views">Views</a></li><li><a href="../file.ViewHelpers.html" title="View Helpers">View Helpers</a></li><li><a href="../file.Routes.html" title="Mount this app!">Mount this app!</a></li><li><a href="../file.Plugins.html" title="Plugins">Plugins</a></li><li><a href="../file.PluginDevelopment.html" title="Plugin Development">Plugin Development</a></li><li><a href="../file.Mongoid.html" title="Mongoid">Mongoid</a></li><li><a href="../file.Dragonfly.html" title="Dragonfly">Dragonfly</a></li><li><a href="../file.History.html" title="History">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">
+  Generated on Sun Oct 30 17:01:17 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.3 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>
