@@ -2,6 +2,7 @@
 log/*.log
 pkg/
 spec/dummy/db/*.sqlite3
+spec/dummy/db/*.sqlite3-journal
 spec/dummy/log/*.log
 spec/dummy/tmp/
 *.sw*
@@ -16,3 +17,9 @@ imagine-*.gem
 
 # vim-ruby-debugger
 posix
+
+# Gems shouldn't commit their lockfile
+Gemfile.lock
+
+# yard cache
+.yardoc/*

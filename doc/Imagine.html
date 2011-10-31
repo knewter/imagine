@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: Imagine
+  
+    &mdash; Documentation by YARD 0.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+    <script type="text/javascript" charset="utf-8">
+      (function($){
+        // YARD automatically creates a table of contents
+        // Let's place it inside .col1, instead of #content
+        $(document).ready(function(){
+          $('#toc').prependTo($('.col1'));
+          
+        });
+      })(jQuery);
+    </script>
+  </head>
+  <body>
+    <!-- GOOGLE ANALYTICS -->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-16382932-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <!-- *************** -->
+
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+
+    <div id="header" class="clearfix">
+      
+      <div id="logo">Imagine (v 0.2.3)</div>
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+    </div>
+
+    <div>
+      <iframe id="search_frame"></iframe>
+    </div>
+
+    <div id="content" class="clearfix">
+      <div class="col1">
+        <h1>Module: Imagine
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/imagine.rb<span class="defines">,<br />
+  lib/imagine/config.rb,<br /> lib/imagine/engine.rb,<br /> lib/imagine/plugin.rb,<br /> lib/imagine/version.rb,<br /> lib/imagine/plugins.rb,<br /> app/models/imagine/album.rb,<br /> app/models/imagine/image.rb,<br /> app/warehouses/imagine/image.rb,<br /> app/warehouses/imagine/album.rb,<br /> lib/imagine/model_extensions/image.rb,<br /> lib/imagine/model_extensions/album.rb,<br /> app/helpers/imagine/application_helper.rb,<br /> app/controllers/imagine/images_controller.rb,<br /> plugins/orbit_view/lib/imagine-orbit_view.rb,<br /> app/controllers/imagine/albums_controller.rb,<br /> app/controllers/imagine/application_controller.rb,<br /> plugins/galleria_view/lib/imagine-galleria_view.rb,<br /> lib/rails/generators/imagine/migration_generator.rb,<br /> lib/rails/generators/imagine/initializer_generator.rb,<br /> plugins/basic_list_view/lib/imagine-basic_list_view.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+   
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Imagine/ApplicationHelper.html" title="Imagine::ApplicationHelper (module)">ApplicationHelper</a></span>, <span class='object_link'><a href="Imagine/BasicListView.html" title="Imagine::BasicListView (module)">BasicListView</a></span>, <span class='object_link'><a href="Imagine/Engines.html" title="Imagine::Engines (module)">Engines</a></span>, <span class='object_link'><a href="Imagine/GalleriaView.html" title="Imagine::GalleriaView (module)">GalleriaView</a></span>, <span class='object_link'><a href="Imagine/ModelExtensions.html" title="Imagine::ModelExtensions (module)">ModelExtensions</a></span>, <span class='object_link'><a href="Imagine/OrbitView.html" title="Imagine::OrbitView (module)">OrbitView</a></span>, <span class='object_link'><a href="Imagine/Warehouses.html" title="Imagine::Warehouses (module)">Warehouses</a></span>
+    
+   
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Imagine/AlbumsController.html" title="Imagine::AlbumsController (class)">AlbumsController</a></span>, <span class='object_link'><a href="Imagine/ApplicationController.html" title="Imagine::ApplicationController (class)">ApplicationController</a></span>, <span class='object_link'><a href="Imagine/Config.html" title="Imagine::Config (class)">Config</a></span>, <span class='object_link'><a href="Imagine/Engine.html" title="Imagine::Engine (class)">Engine</a></span>, <span class='object_link'><a href="Imagine/ImagesController.html" title="Imagine::ImagesController (class)">ImagesController</a></span>, <span class='object_link'><a href="Imagine/InitializerGenerator.html" title="Imagine::InitializerGenerator (class)">InitializerGenerator</a></span>, <span class='object_link'><a href="Imagine/MigrationGenerator.html" title="Imagine::MigrationGenerator (class)">MigrationGenerator</a></span>, <span class='object_link'><a href="Imagine/OrmNotSupportedError.html" title="Imagine::OrmNotSupportedError (class)">OrmNotSupportedError</a></span>, <span class='object_link'><a href="Imagine/Plugin.html" title="Imagine::Plugin (class)">Plugin</a></span>, <span class='object_link'><a href="Imagine/Plugins.html" title="Imagine::Plugins (class)">Plugins</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#config-class_method" title="config (class method)">+ (Object) <strong>config</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#configure-class_method" title="configure (class method)">+ (Object) <strong>configure</strong>(options = {}, &amp;block) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#method_missing-class_method" title="method_missing (class method)">+ (Object) <strong>method_missing</strong>(meth, *args) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#version-class_method" title="version (class method)">+ (Object) <strong>version</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="config-class_method">
+  
+    + (<tt>Object</tt>) <strong>config</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+11
+12
+13</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine.rb', line 11</span>
+
+<span class='def def kw'>def</span> <span class='config identifier id'>config</span>
+  <span class='@config ivar id'>@config</span> <span class='opasgn op'>||=</span> <span class='Imagine constant id'>Imagine</span><span class='colon2 op'>::</span><span class='Config constant id'>Config</span><span class='dot token'>.</span><span class='new identifier id'>new</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="configure-class_method">
+  
+    + (<tt>Object</tt>) <strong>configure</strong>(options = {}, &amp;block) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine.rb', line 7</span>
+
+<span class='def def kw'>def</span> <span class='configure identifier id'>configure</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='assign token'>=</span><span class='lbrace token'>{</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='bitand op'>&amp;</span><span class='block identifier id'>block</span><span class='rparen token'>)</span>
+  <span class='@config ivar id'>@config</span> <span class='opasgn op'>||=</span> <span class='Imagine constant id'>Imagine</span><span class='colon2 op'>::</span><span class='Config constant id'>Config</span><span class='dot token'>.</span><span class='new identifier id'>new</span><span class='lparen token'>(</span><span class='options identifier id'>options</span><span class='comma token'>,</span> <span class='bitand op'>&amp;</span><span class='block identifier id'>block</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="method_missing-class_method">
+  
+    + (<tt>Object</tt>) <strong>method_missing</strong>(meth, *args) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine.rb', line 15</span>
+
+<span class='def def kw'>def</span> <span class='method_missing identifier id'>method_missing</span><span class='lparen token'>(</span><span class='meth identifier id'>meth</span><span class='comma token'>,</span> <span class='mult op'>*</span><span class='args identifier id'>args</span><span class='rparen token'>)</span>
+  <span class='super super kw'>super</span> <span class='unless unless_mod kw'>unless</span> <span class='config identifier id'>config</span><span class='dot token'>.</span><span class='respond_to? fid id'>respond_to?</span><span class='lparen token'>(</span><span class='meth identifier id'>meth</span><span class='rparen token'>)</span>
+  <span class='config identifier id'>config</span><span class='dot token'>.</span><span class='send identifier id'>send</span><span class='lparen token'>(</span><span class='meth identifier id'>meth</span><span class='comma token'>,</span> <span class='mult op'>*</span><span class='args identifier id'>args</span><span class='rparen token'>)</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="version-class_method">
+  
+    + (<tt>Object</tt>) <strong>version</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+3
+4
+5</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/imagine/version.rb', line 3</span>
+
+<span class='def def kw'>def</span> <span class='version identifier id'>version</span>
+  <span class='string val'>%q{0.2.3}</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+      </div>
+      <div class="col2">
+        <ul class="main_files clearfix">
+          <li><a href="file.README.html" title="Home">Home</a></li><li><a href="file.GeneralUsage.html" title="General usage">General usage</a></li><li><a href="file.Configuration.html" title="Configuration">Configuration</a></li><li><a href="file.Models.html" title="Models">Models</a></li><li><a href="file.Controllers.html" title="Controllers">Controllers</a></li><li><a href="file.Views.html" title="Views">Views</a></li><li><a href="file.ViewHelpers.html" title="View Helpers">View Helpers</a></li><li><a href="file.Routes.html" title="Mount this app!">Mount this app!</a></li><li><a href="file.Plugins.html" title="Plugins">Plugins</a></li><li><a href="file.PluginDevelopment.html" title="Plugin Development">Plugin Development</a></li><li><a href="file.Mongoid.html" title="Mongoid">Mongoid</a></li><li><a href="file.Dragonfly.html" title="Dragonfly">Dragonfly</a></li><li><a href="file.History.html" title="History">History</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer">
+  Generated on Sun Oct 30 17:11:08 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.3 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>
