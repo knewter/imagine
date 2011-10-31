@@ -2,7 +2,7 @@ Imagine
 -------
 [![Travis CI Build Status](http://travis-ci.org/knewter/imagine.png)](http://travis-ci.org/knewter/imagine)
 
-Imagine is a {http://rubyonrails.org Rails} engine that provides drop-in image gallery support. It is extensible, and aims to be the de facto standard for Rails image galleries. Its a Rails image gallery, that's mountable.  Works on rails 3.1 at least :) Should work on 3.x
+Imagine is a [Rails](http://rubyonrails.org) engine that provides drop-in image gallery support. It is extensible, and aims to be the de facto standard for Rails image galleries. Its a Rails image gallery, that's mountable.  Works on rails 3.1 at least :) Should work on 3.x
 
 It's still in active development.
 
