@@ -80,11 +80,11 @@ Todo
 
 Contributing
 ------------
-If you want to contribute, you can do so a few different ways. You could fork us on {http://github.com/knewter/imagine github}, you could build a new album view plugin, or you could just {http://www.github.com/knewter/imagine/issues give us some feedback or suggestions}.
+If you want to contribute, you can do so a few different ways. You could fork us on {http://github.com/knewter/imagine github}, you could build a new album view plugin, or you could just [give us some feedback or suggestions](http://www.github.com/knewter/imagine/issues).
 
 Issues/Suggestions/Questions
 ------
-Please use the {http://github.com/knewter/imagine/issues github issue tracker}.
+Please use the [github issue tracker](http://github.com/knewter/imagine/issues).
 
 Credits
 -------
