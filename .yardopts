@@ -1,0 +1,17 @@
+--main README.md
+-e ./yard/setup.rb
+-
+extra_docs/GeneralUsage.md
+extra_docs/Configuration.md
+extra_docs/Models.md
+extra_docs/Controllers.md
+extra_docs/Views.md
+extra_docs/ViewHelpers.md
+extra_docs/Routes.md
+extra_docs/Plugins.md
+extra_docs/PluginDevelopment.md
+extra_docs/ActiveRecord.md
+extra_docs/Mongoid.md
+extra_docs/Dragonfly.md
+LICENSE
+History.md
