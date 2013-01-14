@@ -6,6 +6,7 @@ module Imagine
         model.has_many :images, :class_name => "Imagine::Image"
         model.send :extend,  ClassMethods
         model.send :include, InstanceMethods
+        model.attr_accessible :name, :images
       end
 
       module ClassMethods
