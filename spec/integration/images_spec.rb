@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'images' do
   before do
-    @album = Factory(:album)
+    @album = FactoryGirl.create(:album)
   end
   it 'creating a new one from a file upload' do
     visit album_path(@album)
@@ -15,7 +15,7 @@ describe 'images' do
   end
 
   it 'viewing a created image' do
-    @image = Factory(:image, :album => @album, :file_url => 'http://www.google.com/images/logo_sm.gif')
+    @image = FactoryGirl.create(:image, :album => @album, :file_url => 'http://www.google.com/images/logo_sm.gif')
     visit album_image_path(@album, @image)
     page.status_code.should == 200
   end

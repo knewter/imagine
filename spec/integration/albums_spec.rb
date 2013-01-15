@@ -22,8 +22,8 @@ describe 'albums' do
 
   describe 'viewing an existing album' do
     before do
-      @album = Factory(:album, :name => "Boogie")
-      @image = Factory(:image, :album => @album, :file_url => 'http://www.google.com/images/logo_sm.gif')
+      @album = FactoryGirl.create(:album, :name => "Boogie")
+      @image = FactoryGirl.create(:image, :album => @album, :file_url => 'http://www.google.com/images/logo_sm.gif')
     end
     context 'with no plugin view defined in the params' do
       before do
